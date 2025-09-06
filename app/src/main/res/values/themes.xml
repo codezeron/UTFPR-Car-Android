@@ -2,4 +2,11 @@
 <resources>
 
     <style name="Theme.MyApiTest" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.AppCompat.DayNight" parent="android:Theme.Material.Light.NoActionBar" >
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/teal_200</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryDark</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
 </resources>

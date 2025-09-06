@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">MyApiTest - COLOQUE O SEU NOME AQUI</string>
+    <string name="app_name">MyApiTest - Enzo Yutaka Hashimoto</string>
+    <string name="title_activity_add_edit_car">AddEditCarActivity</string>
+    <string name="excluir_carro">Excluir Carro</string>
+    <string name="salvar_carro">Salvar Carro</string>
+    <string name="location_format">Lat: 0.0, Long: 0.0</string>
+    <string name="selecionar_localiza_o_no_mapa">Selecionar Localização no Mapa</string>
+    <string name="confirmar_exclusao">Confirmar Exclusão</string>
+    <string name="confirmar_exclusao_mensagem">Tem certeza que deseja excluir este carro?</string>
+    <string name="excluir">Excluir</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="carro_excluido_com_sucesso">Carro excluído com sucesso</string>
 </resources>
