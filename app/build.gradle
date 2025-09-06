@@ -23,6 +23,19 @@ android {
         vectorDrawables {
             useSupportLibrary true
         }
+        def secretsFile = rootProject.file("secrets.properties")
+        def secrets = new Properties()
+        secrets.load(new FileInputStream(secretsFile))
+
+        // Substitui os placeholders no AndroidManifest
+        manifestPlaceholders = [
+                ADMOB_APP_ID: secrets.getProperty("ADMOB_APP_ID", ""),
+                GOOGLE_MAPS_API_KEY: secrets.getProperty("GOOGLE_MAPS_API_KEY", "")
+        ]
+
+        // BuildConfigField para usar no código
+        buildConfigField "String", "ADMOB_APP_ID", "\"${secrets.getProperty("ADMOB_APP_ID", "")}\""
+        buildConfigField "String", "GOOGLE_MAPS_API_KEY", "\"${secrets.getProperty("GOOGLE_MAPS_API_KEY", "")}\""
     }
 
     buildTypes {
@@ -47,7 +60,8 @@ android {
         }
     }
     buildFeatures {
-        dataBinding true // Habilita o Data Binding
+        dataBinding true
+        buildConfig true
     }
     viewBinding {
         enabled = true

@@ -104,4 +104,4 @@ Para enviar o projeto finalizado, siga os passos abaixo:
 Boa entrega e sucesso no desenvolvimento!
 
 PS by Enzo: quando for testar a autenticação por telefone, use o número +55 11 91234-5678 e o código 123456.
-PS 2: colocao o seu arquivo google-services.json e secret.properties
+PS 2: colocao o seu arquivo google-services.json, secret.properties e a string default_web_client_id
