@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#FFFFFF">
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"
+        android:textColor="#000000" />
+
+    <!-- Campo de Telefone -->
+    <EditText
+        android:id="@+id/phoneNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número de telefone"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:layout_marginBottom="16dp"
+        android:padding="16dp"
+        android:background="@drawable/edittext_bg" />
+
+    <!-- Botão Telefone -->
+    <Button
+        android:id="@+id/phone_sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Entrar com Telefone"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#6200EE"
+        android:textColor="#FFFFFF" />
+
+    <!-- Divisor -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ou"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"
+        android:textColor="#666666" />
+
+    <!-- Botão Google -->
+    <Button
+        android:id="@+id/google_sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Entrar com Google"
+        android:backgroundTint="#4285F4"
+        android:textColor="#FFFFFF" />
+
+    <!-- Loading -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone" />
+
+</LinearLayout>
